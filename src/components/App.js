@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import News from './News/News';
 
-// Här skapar vi en klass som redan finns för att sedan utöka den med egna tillägg.
-// Constructor är en funktion och för att använda den behöver vi super för att lagra appens tillstånd.
-// Vi kallar på constructor funktionen genom att använda oss av en funktionen super.
-// Vi tilldelar this.state ett object som innehåller det som vi vill komponenten ska ha.
-// news1 hämtar in huvudrubrikerna ifrån bbc och news2 hämtar in alla engelska artiklar ifrån techcrunch.
+// Med component som mall skapar vi en egen klass vi kallar App.
+// Constructor är en funktion för att skapa vårt obejkt.(App) För att få tillgång till allt component erbjuder använder vi constructor som component har. Det gör vi genom super, och vi gör detta för att lagdra appens tillsånd
+// Vi tilldelar this.state ett objekt som innehåller det som vi vill komponenten ska ha. Det är ju då news1 och 2.
+// new1 hämtar in huvudrubrikerna ifrån bbc och news2 hämtar in alla artiklar ifrån techcrunch på engelska.
 class App extends Component {
   constructor(props) {
     super(props);
